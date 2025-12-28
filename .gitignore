@@ -25,3 +25,8 @@ npm-debug.log*
 # Node modules (if you add any in future)
 node_modules/
 
+# Script file with API key
+Script.js
+
+# API key file
+const apiKey = '339e2fe4f5797acb45a0ff118691a4c1';
