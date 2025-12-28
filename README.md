@@ -92,6 +92,6 @@ Weather/
 - Try using the format: "City, Country" (e.g., "London, UK")
 
 ## License
-
+Developed by Prince Kumar
 Free to use for personal projects.
 
