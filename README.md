@@ -21,43 +21,6 @@ A beautiful, modern weather application that shows current weather conditions fo
 
 **Note:** Geolocation feature may not work with this method. Use Method 2 for full functionality.
 
-### Method 2: Local Server (Recommended)
-
-#### Option A: Using Python (if installed)
-
-1. Open Terminal
-2. Navigate to the project folder:
-   ```bash
-   cd /Users/princekumar/Desktop/2026/Weather
-   ```
-3. Run Python server:
-   ```bash
-   # For Python 3
-   python3 -m http.server 8000
-   
-   # OR for Python 2
-   python -m SimpleHTTPServer 8000
-   ```
-4. Open browser and go to: `http://localhost:8000`
-
-#### Option B: Using Node.js (if installed)
-
-1. Install a simple server globally:
-   ```bash
-   npm install -g http-server
-   ```
-2. Navigate to project folder:
-   ```bash
-   cd /Users/princekumar/Desktop/2026/Weather
-   ```
-3. Run server:
-   ```bash
-   http-server -p 8000
-   ```
-4. Open browser and go to: `http://localhost:8000`
-
-#### Option C: Using VS Code Live Server Extension
-
 1. Install "Live Server" extension in VS Code
 2. Right-click on `index.html`
 3. Select "Open with Live Server"
