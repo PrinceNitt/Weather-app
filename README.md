@@ -93,5 +93,5 @@ Weather/
 
 ## License
 Developed by Prince Kumar
-Free to use for personal projects.
+
 
