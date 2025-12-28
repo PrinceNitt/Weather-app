@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f0f0;
+    border-radius: 30px;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+    background: #e0e0e0;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+#city {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 10px;
+    font-size: 16px;
+    flex: 1;
+    color: #333;
+}
+
+#city::placeholder {
+    color: #999;
+}
+
+#search {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search:hover {
+    transform: scale(1.1);
+}
+
+#search img {
+    width: 20px;
+    height: 20px;
+}
+
+.location-btn {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.location-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.location-btn:active {
+    transform: translateY(0);
+}
+
+#weather {
+    min-height: 300px;
+}
+
+.weather-info {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.weather-icon {
+    margin-bottom: 20px;
+}
+
+.weather-icon img {
+    width: 150px;
+    height: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.city {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.detail-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.detail-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.error {
+    padding: 30px;
+    color: #e74c3c;
+    background: #ffeaea;
+    border-radius: 10px;
+    border: 1px solid #f5c6cb;
+}
+
+.error p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.error-detail {
+    font-size: 0.9rem;
+    color: #c0392b;
+    margin-top: 5px;
+}
+
+.error a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .temperature {
+        font-size: 3rem;
+    }
+    
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .detail-item {
+        justify-content: center;
+    }
+}
+
